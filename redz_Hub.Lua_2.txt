@@ -1,9 +1,8 @@
 notis = require(game.ReplicatedStorage:WaitForChild("Notification"))
 notis.new("<Color=White>YMIE HUB MAIN<Color=/>"):Display()
-notis.new("<Color=Blue>Founder:YouTube Me:chuổiblox480<Color=/>"):Display() 
+notis.new("<Color=Blue>Founder:YouTube Me:chuoiroblox480<Color=/>"):Display() 
 notis.new("<Color=Red>Sub,Like Youtube Me AdminJoin Discord:https://discord.com/invite/54ZpuRS8r9 <Color=/>"):Display() 
 notis.new("<Color=Yellow>Exploit Use:<Color=/> ".. identifyexecutor()):Display()
----------------------------------------------------------------------------------------------------------------------------------------------
 repeat task.wait()until game:IsLoaded()
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local VirtualUser = game:GetService("VirtualUser")
