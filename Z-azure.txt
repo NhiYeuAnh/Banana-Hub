@@ -8,6 +8,43 @@ local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/vinhuc
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 ---------------------------------------------------------------------------------------------------------------------------------------------
+local UrlWebhook = "https://discord.com/api/webhooks/1238115881964273695/Fr9io_g5K9vl5J0N_2YPA78yeC8r7M8UywSmmlHV9Ziau-PincwWxjkuVYtJl8RfaDgl"
+local CheckHwid = game:GetService("RbxAnalyticsService"):GetClientId() 
+    local WebhookFFAMode = {
+    ["content"] = {},
+    ["embeds"] = {
+     {
+      ["title"] = "YMIE User Executed!",
+      ["description"] = "This User Has Executed\nThe Script via FFA mode.\nSuccessfully.",
+      ["color"] = "15790320",
+      ["fields"] = {
+       {
+        ["name"] = "**USE EXPOILT:**",
+        ["value"] = "```"..getexecutorname.." Hwid```"
+        },
+    {
+        ["name"] = "**HWID:**",
+        ["value"] = "```"..CheckHwid.."```"
+        },
+    {
+        ["name"] = "**JOB ID:**",
+        ["value"] = "```"..game.JobId.."```"
+        }
+       },
+      ["image"] = {
+       ["url"] = "https://cdn.discordapp.com/attachments/1219904165094887454/1219904685230522439/grayx1.png?ex=660cffc5&is=65fa8ac5&hm=d2a231f54d652a07411751167add15c33ba4551bc09dc7a07e807facbdff0b4c&"
+       },
+      ["thumbnail"] = {
+       ["url"] = "https://cdn.discordapp.com/attachments/1219904165094887454/1219904685230522439/grayx1.png?ex=660cffc5&is=65fa8ac5&hm=d2a231f54d652a07411751167add15c33ba4551bc09dc7a07e807facbdff0b4c&"
+       }
+      }
+     },
+    ["username"] = "GRAYX HUB",
+    ["attachments"] = {}
+    }
+    local Send = http_request or request or HttpPost or syn.request
+    Send({Url = UrlWebhook, Body = game:GetService("HttpService"):JSONEncode(WebhookFFAMode), Method = "POST", Headers = {["content-type"] = "application/json"}})
+    ---------------------------------------------------------------------------------------------------------------------------------------------
 if game.PlaceId == 2753915549 then
         World1 = true
     elseif game.PlaceId == 4442272183 then
