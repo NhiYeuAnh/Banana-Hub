@@ -2127,18 +2127,18 @@ end
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
-	About = Window: AddTab({ Title = " Profile Hub", Icon = "user" }),
+	About = Window: AddTab({ Title = " Profile Hub", Icon = "crown" }),
 	Main = Window:AddTab({ Title = "Main", Icon = "home" }),
-	Sh = Window:AddTab({ Title = "Shop", Icon = "shopping-cart" }),
+	Sh = Window:AddTab({ Title = "Shop", Icon = "crown" }),
 	Settings = Window:AddTab({ Title = "Setting", Icon = "settings" }),   
-    Mt = Window:AddTab({ Title = " Material & Boss", Icon = "air-vent" }),    
-    De = Window:AddTab({ Title = " Fruit And Raid", Icon = "apple" }), 
-    Qs = Window:AddTab({ Title = "Get Item", Icon = "arrow-up-down" }),    
-    St = Window:AddTab({ Title = " Status", Icon = "activity" }),    
-    Lc = Window:AddTab({ Title = " Local Player", Icon = "baby" }),   
-    RC = Window:AddTab({ Title = "Upgrade Race V4", Icon = "chevrons-right" }),   
+    Mt = Window:AddTab({ Title = " Material & Boss", Icon = "crown" }),    
+    De = Window:AddTab({ Title = " Fruit And Raid", Icon = "crown" }), 
+    Qs = Window:AddTab({ Title = "Get Item", Icon = "arrow-up-crown" }),    
+    St = Window:AddTab({ Title = " Misc", Icon = "activity" }),    
+    Lc = Window:AddTab({ Title = " Local Player", Icon = "crown" }),   
+    RC = Window:AddTab({ Title = "Upgrade Race V4", Icon = "-crown" }),   
     Se = Window:AddTab({ Title = "Sea Event", Icon = "waves" }),  
-    Ms = Window:AddTab({ Title = " Misc", Icon = "align-vertical-distribute-center" }),  
+    Ms = Window:AddTab({ Title = "Farm Items", Icon = "crown" }),  
 }
 
 local Options = Fluent.Options
@@ -2157,8 +2157,8 @@ Tabs.About:AddParagraph({
     })
 
   Tabs.About:AddParagraph({
-        Title = "Version Script",
-        Content = "Version 3"
+        Title = "Versions Script",
+        Content = "Versions 3"
     })
     
     Fluent:Notify({
